@@ -3,41 +3,45 @@
  ******************************/
 
 function isItLong(sentence) {
-  if (sentence.length > 20)
-  {
-  return "That's a long string!";
+  if (sentence.length > 20) {
+    return "That's a long string!";
   }
 }
 
-function isItMedium(str){
-if (str.slice(10,20))
-{
-  return "That's a regular sized string!";
+function isItMedium(str) {
+  if (str.slice(10, 20)) {
+    return "That's a regular sized string!";
+  }
 }
-}
+// if (str.length >= 10 && str.length <= 20) 
 
 function isItShort(str) {
-  if (str.length < 10)
-  {
-  return "That's a small string!";
+  if (str.length < 10) {
+    return "That's a small string!";
+  }
+  else if (str.length > 10) 
+}
+//else return "that's not a small string" instead of else if(str length > 10)
+
+
+function howLongIsMyString(sentence) {
+  if (sentence.length > 20) {
+    return "That's a long string!";
+  } else if (sentence.slice(10, 20)) { //should have been sentence.length,>=10
+    return "That's a regular sized string!";
+  } else if (sentence.length < 10) { //else YOU ALREADY COVERED OTHER PARAMETERS
+    return "That's a small string!";
   }
 }
 
-function howLongIsMyString(sentence){
-  if (sentence.length > 20)
-  {
-  return "That's a long string!";
-  } else if (sentence.slice(10, 20)) 
-  {
-  return "That's a regular sized string!";
-  } else if(sentence.length < 10)
-  {
-  return "That's a small string!";
+function instructorHeight(name) {
+  if (name === 'Colin') {
+    return 62;
+  } else if (name === 'Mesuara') {
+    return 67;
+  } else {
+    return `I don't know that instructor`;
   }
-}
-
-function instructorHeight(person1,person2){
-  
 }
 
 /**********************************
