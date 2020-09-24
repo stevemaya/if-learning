@@ -2,6 +2,20 @@
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
 
+function isItLon(sentence){
+  if(sentence.length < 20) {
+  console.log('hi');} 
+  else if(sentence.length === 20) { 
+  console.log(`I'm 20 chars long...`);}
+  else(sentence.length > 20); {
+  console.log("`Boy HOWDY am I a long string, huh. Go me!`)).toBe(`That's a long string!`");}
+}
+
+function isItLong(str){
+  return str > 20;
+}
+
+
 
 
 
